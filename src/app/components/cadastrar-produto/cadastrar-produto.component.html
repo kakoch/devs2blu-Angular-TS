@@ -1,1 +1,15 @@
-<p>cadastrar-produto works!</p>
+<form [formGroup]="formularioProduto">
+    <input type="text" formControlName="name" placeholder="nome">
+    <input type="text" formControlName="description" placeholder="descrição">
+    <input type="text" formControlName="code" placeholder="codigo">
+    <input type="number" formControlName="costPrice">
+    <input type="number" formControlName="salePrice">
+    <input type="text" formControlName="preparationTime" placeholder="Tempo de preparo">
+    <select formControlName="productType">
+        <option value="SNACK">SNACK</option>
+        <option value="DRINK">DRINK</option>
+        <option value="DESSERT">DESSERT</option>
+    </select>
+    <button type="submit" (click)="enviarFormulario()">Salvame Plsssss</button>
+</form>
+<h5 *ngIf="mostrar == true">teste</h5>

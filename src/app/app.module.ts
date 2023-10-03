@@ -12,6 +12,8 @@ import { HeaderModule } from './components/header/header.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // importo o modulo (escopo ao qual está inserido 
+    // o meu componente o qual eu quero mostrar)
     HeaderModule
   ],
   providers: [],

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'novo';
-  private nome: string;
+  //private nome: string;
   // Caso o atributo for privado
   // o HTML não consegue acessar
 
