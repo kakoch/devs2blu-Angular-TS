@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
+
 @Component({
   selector: 'app-cadastrar-produto',
   templateUrl: './cadastrar-produto.component.html',
@@ -37,8 +38,11 @@ export class CadastrarProdutoComponent implements OnInit {
 
     // 3 - Criar no html o formulario
   }
+  
+  public prodcuts: string[] = ['SNACK','DRINK','DESSERT']
 
   enviarFormulario(){
+    //this.mostrar = !this.mostrar
     if(this.mostrar){
       this.mostrar = false
     }else{

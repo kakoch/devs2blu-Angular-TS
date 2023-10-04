@@ -1,51 +1,6 @@
-*{
-    align-items: center;
+form{
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-    justify-content: center;
-}
-
-
-form{
-    width: 300px;
-    height: auto;
-    background-color: rgb(200, 121, 236);
-}
-input{
-    border: 2px purple solid;
-    background-color: darkorchid;
-    border-radius: 5px;
-    margin: 2px;
-    padding: 3px;
-    height: 30px;
-    width: 150px;
-    text-align: center;
-    color: aliceblue;
-    
-}
-select{
-    border: 2px purple solid;
-    background-color: darkorchid;
-    border-radius: 5px;
-    margin: 2px;
-    padding: 3px;
-    height: 35px;
-    width: 160px;
-    text-align: center;
-    color: aliceblue;
-}
-input::placeholder{
-    color:red
-}
-button{
-    width: 160px;
-    height: 30px;
-    border: 3px solid purple;
-    border-radius: 10px;
-    background-color: darkorchid;
-    color: antiquewhite;
-    padding: 3px;
-    margin: 3px;
-
+    align-items: center;
+    background-color: rgb(166, 140, 177);
 }
