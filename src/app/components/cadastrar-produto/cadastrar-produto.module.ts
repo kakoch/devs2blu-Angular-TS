@@ -7,6 +7,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatInputModule} from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
+import { ServiceModule } from 'src/app/@core/services/service.module';
 
 
 
@@ -22,7 +24,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatButtonModule,
     NgbAlertModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    ServiceModule
+    
   ]
 })
 export class CadastrarProdutoModule{ }

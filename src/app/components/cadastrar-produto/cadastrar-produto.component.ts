@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { ProdutoService } from 'src/app/@core/services/produto.service';
 
 
 @Component({
@@ -13,12 +14,19 @@ export class CadastrarProdutoComponent implements OnInit {
   public mostrar: boolean = true;
   // Autowired
   // Injetando bibliotecas
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private produtoService: ProdutoService) { }
 
   ngOnInit(): void {
     // Chamar a função para executar
     this.createForm()
   }
+
+  public salvarProduto(){
+    const jsonPronto = this.formularioProduto.value;
+    this.produtoService.create(jsonPronto).subscribe(e => console.log(e))
+  }
+
+
   // Começa o fomulario dentro do typescript
   // Criar (constroi) uma função que cria o formulario
   private createForm(){

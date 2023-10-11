@@ -1,3 +1,26 @@
-<ul>
-    <li *ngFor="let item of listaTarefas">{{item}}</li>
-</ul>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">id</th>
+			<th scope="col" sortable="name" >Nome</th>
+			<th scope="col" sortable="description" >Descrição</th>
+			<th scope="col" sortable="code" >Codigo</th>
+			<th scope="col" sortable="custo" >Preço de custo</th>
+			<th scope="col" sortable="venda" >Preço de venda</th>
+			<th scope="col" sortable="tempo" >Tempo de preparo</th>
+			<th scope="col" sortable="tipo" >Categoria</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let produto of listaDeProdutos">
+			<th scope="row">{{ produto.id }}</th>
+			<td>{{ produto.name }}</td>
+			<td>{{ produto.description }}</td>
+			<td>{{ produto.code }}</td>
+			<td>{{ produto.costPrice | number }}</td>
+			<td>{{ produto.salePrice | number }}</td>
+			<td>{{ produto.preparationTime }}</td>
+			<td>{{ produto.productType }}</td>
+		</tr>
+	</tbody>
+</table>
